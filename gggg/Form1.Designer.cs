@@ -39,12 +39,14 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(757, 74);
+            this.button1.Location = new System.Drawing.Point(757, 17);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 98);
             this.button1.TabIndex = 0;
@@ -54,7 +56,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(757, 189);
+            this.button2.Location = new System.Drawing.Point(757, 135);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 98);
             this.button2.TabIndex = 1;
@@ -64,7 +66,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(757, 303);
+            this.button3.Location = new System.Drawing.Point(757, 256);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 98);
             this.button3.TabIndex = 2;
@@ -74,7 +76,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(757, 420);
+            this.button4.Location = new System.Drawing.Point(757, 383);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 98);
             this.button4.TabIndex = 3;
@@ -93,7 +95,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(757, 540);
+            this.button5.Location = new System.Drawing.Point(757, 503);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 98);
             this.button5.TabIndex = 5;
@@ -104,7 +106,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(946, 111);
+            this.radioButton1.Location = new System.Drawing.Point(946, 54);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(98, 24);
             this.radioButton1.TabIndex = 11;
@@ -116,7 +118,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(946, 226);
+            this.radioButton2.Location = new System.Drawing.Point(946, 172);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(48, 24);
             this.radioButton2.TabIndex = 12;
@@ -127,7 +129,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(946, 340);
+            this.radioButton3.Location = new System.Drawing.Point(946, 293);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(55, 24);
             this.radioButton3.TabIndex = 12;
@@ -138,7 +140,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(946, 457);
+            this.radioButton4.Location = new System.Drawing.Point(946, 420);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(180, 24);
             this.radioButton4.TabIndex = 13;
@@ -149,7 +151,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(946, 577);
+            this.radioButton5.Location = new System.Drawing.Point(946, 540);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(105, 24);
             this.radioButton5.TabIndex = 14;
@@ -157,11 +159,33 @@
             this.radioButton5.Text = "гипербола";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(764, 636);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(230, 78);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "божья кнопка";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(1005, 636);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(121, 78);
+            this.button7.TabIndex = 16;
+            this.button7.Text = "очистка";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 754);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
@@ -194,5 +218,7 @@
         private RadioButton radioButton3;
         private RadioButton radioButton4;
         private RadioButton radioButton5;
+        private Button button6;
+        private Button button7;
     }
 }

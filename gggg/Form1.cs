@@ -1,3 +1,5 @@
+using System.Drawing;
+
 namespace gggg
 {
     public partial class Form1 : Form
@@ -10,7 +12,7 @@ namespace gggg
             this.radioButton3.CheckedChanged += new System.EventHandler(this.button3_Click);
             this.radioButton4.CheckedChanged += new System.EventHandler(this.button4_Click);
             this.radioButton5.CheckedChanged += new System.EventHandler(this.button5_Click);
-
+            this.button6.Click += new System.EventHandler (button1_Click)+ button2_Click + button3_Click + button4_Click + button5_Click;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -21,7 +23,7 @@ namespace gggg
         private void button1_Click(object sender, EventArgs e)
         {
             Graphics graphics = pictureBox1.CreateGraphics();
-            graphics.Clear(Color.White);
+           
             Pen pen = new Pen(Color.Black, 1f);
             Point[] point = new Point[700];
             for (int x = -300, y, i = 0; x < 300; x++, i++)
@@ -39,7 +41,7 @@ namespace gggg
         private void button2_Click(object sender, EventArgs e)
         {
             Graphics graphics = pictureBox1.CreateGraphics();
-            graphics.Clear(Color.White);
+          
             Pen pen = new Pen(Color.Black, 1f);
             Point[] point = new Point[700];
 
@@ -61,7 +63,7 @@ namespace gggg
         private void button3_Click(object sender, EventArgs e)
         {
             Graphics graphics = pictureBox1.CreateGraphics();
-            graphics.Clear(Color.White);
+            
             Pen pen = new Pen(Color.Black, 1f);
             Point[] point = new Point[700];
             graphics.DrawLines(pen, point);
@@ -74,7 +76,7 @@ namespace gggg
         private void button4_Click(object sender, EventArgs e)
         {
             Graphics graphics = pictureBox1.CreateGraphics();
-            graphics.Clear(Color.White);
+            
             Pen pen = new Pen(Color.Black, 1f);
             Point[] point = new Point[700];
             for (int x = -350, y, i = 0; x < 350; x++, i++)
@@ -92,7 +94,7 @@ namespace gggg
         private void button5_Click(object sender, EventArgs e)
         {
             Graphics graphics = pictureBox1.CreateGraphics();
-            graphics.Clear(Color.White);
+           
             Pen pen = new Pen(Color.Black, 1f);
             Point[] point = new Point[700];
             for (int x = -350, y, i = 0;   x < 351; x++, i++)
@@ -118,6 +120,17 @@ namespace gggg
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Graphics graphics = pictureBox1.CreateGraphics();
+            graphics.Clear(Color.White);
         }
     }
 }
